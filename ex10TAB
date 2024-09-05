@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+   int T[5];
+    int i;
+    int n,x;
+    printf("donner le nomber des elements :");
+    scanf("%d",&n);
+    for (i=0;i<n;i++){
+        printf("T[%d]= ",i);
+        scanf("%d",&T[i]);
+    }
+    printf("donner l'element a recherche :");
+    scanf("%d",&x);
+    
+    for(i=0;i<n;i++){
+        if(T[i]==x){
+            printf("l'element %d est présent dans le tableau.\n",x);
+            return 0;
+        }
+    }
+    printf("L'élément %d n'est pas présent dans le tableau.\n",x);
+    return 0;
+}
